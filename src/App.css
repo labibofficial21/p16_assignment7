@@ -1,0 +1,266 @@
+body {
+  overflow-x: scroll;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  background: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  background: #F0EFF1
+}
+
+button:focus {
+  outline: none;
+}
+
+button:disabled {
+  color: grey;
+}
+
+.column-row {
+  display: inline-flex;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.spaces {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.reset-btns button:first-child {
+  margin: 0 10px;
+}
+
+.reset-btns button {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.load-btn:hover {
+  background: #E6F14A;
+}
+
+.clear-btn:hover {
+  background: #EF233C;
+}
+
+.undo-btn:hover {
+  background: #0BC9CD;
+}
+
+.redo-btn:hover {
+  background: #B4ADEA;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(70, 70, 70, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(204, 204, 204, 0.5); 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #5c5c5c;
+  margin-bottom: 10px;
+  color: #F0EFF1;
+}
+
+.column {
+  width: 300px;
+  padding: 10px;
+  padding-bottom: 30px;
+  padding-top: 0;
+  margin: 0px 5px;
+  background: #F0EFF1;
+  border-radius: 6px;
+  position: relative;
+  height: 0%;
+  flex: 0 0 auto;
+  word-break: break-word;
+}
+
+.column:first-child {
+  margin-left: 10px;
+}
+
+.column:last-of-type {
+  margin-right: 0px;
+}
+
+.column:last-of-type .card {
+  justify-content: flex-start;
+}
+
+.column p {
+  margin: 2px;
+  padding-bottom: 4px;
+  cursor: text;
+  border-bottom: 1px solid #ddd
+}
+
+.add-column-btn {
+  height: 0%;
+  width: 100px;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  margin-left: 10px;
+}
+
+.add-column-btn:hover {
+  background: #FA8334
+}
+
+.add-column-form {
+  width: 360px;
+}
+
+.add-column-form input {
+  font-size: 16px;
+  padding: 5px;
+  margin: 0 8px 0 10px;
+  border-radius: 3px;
+  border: 1px solid #dddd
+}
+
+.column input {
+  font-size: 16px;
+  padding: 4px 5px;
+  border-radius: 3px;
+  border: 1px solid #dddd
+}
+
+.remove-column-btn {
+  margin-left: 96%;
+  border-radius: 2px;
+  border: none;
+  background: #F0EFF1;
+  color: red;
+}
+
+.remove-column-btn:hover {
+  background: red;
+  color: #F0EFF1;
+}
+
+.add-card-btn {
+  position: absolute;
+  bottom: 8px;
+  border: none;
+  width: 94%;
+  border-radius: 3px;
+  background: transparent;
+  padding: 4px 0;
+}
+
+.add-card-btn:hover {
+  background: #DDDDDD;
+}
+
+.delete-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2px;
+}
+
+.delete-card-btn {
+  background: #F7F7F8;
+  border: none;
+  color: red;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+.delete-card-btn:hover {
+  background: red;
+  color: #F7F7F8;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F7F7F8;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  padding: 0 4px;
+}
+
+.card:last-of-type {
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: transparent;
+  border: 2px solid #dddd;
+  border-radius: 6px;
+}
+
+.card form input {
+  font-size: 16px;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 3px;
+  border: 1px solid #dddd
+}
+
+.card p {
+  margin: 0px;
+  padding: 10px;
+}
+
+.add-card-form input {
+  width: 96%;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border-radius: 3px;
+  border: 1px solid #dddd
+}
+
+.form-btn {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: #F7F7F8;
+}
+
+.submit-btn {
+  color: #02c802;
+  border: 1px solid #02c802;
+}
+
+.submit-btn:hover {
+  background: #02c802;
+  color: #F7F7F8
+}
+
+.cancel-btn {
+  color: red;
+  border: 1px solid red;
+  margin-left: 8px;
+}
+
+.cancel-btn:hover {
+  background: red;
+  color: #F7F7F8;
+}
